@@ -26,7 +26,7 @@ class ResultsHandler(tornado.web.RequestHandler):
 	def get(self):
 		keywords = self.get_argument("searchQuery", None)
 		if keywords == None or keywords=="what are you looking for?":
-			self.redirect('/')
+			self.redirect('/search')
 		else:
 			results = phoeby.search(keywords)
 			self.render('templates/results.html', results = results)
