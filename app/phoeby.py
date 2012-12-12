@@ -70,7 +70,7 @@ def search(keywordString):
 version = 1.0
 
 __doc__ = '''
-A library which provides web crawling capabilties. Good for web search engines.
+A python library which provides web crawling capabilties. Good for web search engines.
 Uses breadth-first search.
 ---------------
 function crawl() :
