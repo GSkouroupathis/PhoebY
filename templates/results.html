@@ -1,0 +1,41 @@
+
+<html>
+
+<head>
+<title>phoeby</title>
+<style type="text/css">
+@import url("{{static_url('styles/reset.css')}}");
+@import url("{{static_url('styles/menu.css')}}");
+@import url("{{static_url('styles/results.css')}}");
+</style>
+</head>
+
+<body>
+
+<div id="menu">
+<ul>
+	<li><a href="/">about</a></li>
+	<li><a href="/search">search</a></li>
+	<li><a href="/api">API</a></li>
+</ul>
+</div>
+
+<div id="container">
+
+	<div id="search">
+	search results	
+	</div>
+	
+	<div id="results">
+		{% for r in results %}
+		<div class="result">
+		<a href="{{r}}">{{r}}</a>
+		</div>
+		{% end %}
+	</div>
+	
+</div>
+
+</body>
+
+</html> 

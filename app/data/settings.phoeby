@@ -1,0 +1,3 @@
+noOfUrls = 10
+noOfUrlChildren = 2
+baseUrl = http://www.python.org/

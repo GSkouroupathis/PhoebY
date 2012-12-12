@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<title>phoeby</title>
+<style type="text/css">
+@import url("{{static_url('styles/reset.css')}}");
+@import url("{{static_url('styles/menu.css')}}");
+@import url("{{static_url('styles/main.css')}}");
+</style>
+
+</head>
+
+<body>
+
+<div id="menu">
+<ul>
+	<li><a href="/">about</a></li>
+	<li><a href="/search">search</a></li>
+	<li><a href="/api">API</a></li>
+</ul>
+</div>
+
+<div id="container">
+<u>phoeby</u><br />
+A library which provides web crawling capabilties. Good for web search engines.
+Uses breadth-first search.<br />
+<br />
+function crawl() :<br />
+Crawls the web according to the settings in the data/settings.df file.<br />
+Call it before anyone uses search(). Can be called by running gather.py<br />
+<br />
+function search(keywordString) :<br />
+Searches index for every word of three (3) or more letters in the string (keywordString)
+supplied.<br />
+Returns results in order of weights.
+</div>
+
+</body>
+
+</html> 

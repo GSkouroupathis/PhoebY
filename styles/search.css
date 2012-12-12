@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Port+Lligat+Slab:400);
+
+body {
+	background: #FFFFFF url('../imgs/body.png');
+	background-repeat: repeat;
+	font-family: "Port Lligat Slab", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#container {
+	width: 800px;
+	height: 300px;
+	margin: 9% auto auto auto;
+	background: #FFFFFF;
+
+	-webkit-box-shadow: 0 0 20px rgba(255,255,255,.6);
+	-moz-box-shadow: 0 0 20px rgba(255,255,255,.6);
+	box-shadow: 0 0 20px rgba(255,255,255,.6);
+	
+	border-top-right-radius: 22px; 
+	border-bottom-left-radius: 22px; 
+	
+	webkit-border-top-right-radius: 22px; 
+	webkit-border-bottom-left-radius: 22px; 
+		
+	-moz-border-radius-topright: 22px;
+	-moz-border-radius-bottomleft: 22px;
+}
+	
+#container > #topC {
+	width: 780px;
+	height: 43px;
+	padding: 7px 10px 0 10px;
+	background-color: #151515;
+	font-size: 35px;
+	color: #F4F4F4;
+	
+	border-top-right-radius: 20px;
+	webkit-border-top-right-radius: 20px; 
+	-moz-border-radius-topright: 20px;
+
+}
+
+#container > #bottomC {
+	width: 780px;
+	height: 230px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	font-size: 25px;
+	color: #000000;
+	
+	border-bottom-left-radius: 20px; 
+	webkit-border-bottom-left-radius: 20px; 
+	-moz-border-radius-bottomleft: 20px;
+}
+
+#container > #bottomC > #searchForm {
+	width: 100%;
+}
+
+#container > #bottomC > #searchForm > #searchArea {
+	width: 500px;
+	height: 100px;
+	margin: 50px auto 0 auto;
+}
+
+#container > #bottomC > #searchForm > #searchArea > .searchInput {
+	display: block;
+	float: left;
+	width: 388px;
+	height: 48px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	border: 1px solid #D6D6EA;
+	
+	font-size: 25px;
+	color: #AAAAAA;
+	
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#container > #bottomC > #searchForm > #searchArea > .searchInput:focus {
+	border: 1px solid #B0E2FF;
+	
+	color: #000000;
+	
+	-webkit-box-shadow: 0 0 20px rgba(4,155,255,.4);
+	-moz-box-shadow: 0 0 20px rgba(4,155,255,.4);
+	box-shadow: 0 0 20px rgba(4,155,255,.4);
+	
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+}
+
+#container > #bottomC > #searchForm > #searchArea > .searchButton {
+	float: right;
+	width: 95px;
+	height: 50px;
+	margin: 0;
+	border: 1px solid #D6D6EA;
+	background: #FFFFFF url('../imgs/searchButton.png');
+	background-repeat: repeat-x;
+	font-size: 25px;
+	text-shadow: 2px 2px 6px #F0F2FF;
+	
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#container > #bottomC > #searchForm > #searchArea > .searchButton:hover {
+	border: 1px solid #B0E2FF;
+}
+
+#container > #bottomC > #searchForm > #searchArea > .searchButton:active {
+	text-shadow: 2px 2px 1px #CCCCCC;
+}

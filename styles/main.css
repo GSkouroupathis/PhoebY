@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Port+Lligat+Slab:400);
+
+body {
+	background: #FFFFFF url('../imgs/body.png');
+	background-repeat: repeat;
+	font-family: "Port Lligat Slab", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#container {
+	margin: 2% auto auto auto;
+	background: #FEFEFE;
+	color: #000;
+}

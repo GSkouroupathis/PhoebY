@@ -1,0 +1,53 @@
+
+<html>
+
+<head>
+<title>phoeby</title>
+<style type="text/css">
+@import url("{{static_url('styles/reset.css')}}");
+@import url("{{static_url('styles/menu.css')}}");
+@import url("{{static_url('styles/search.css')}}");
+</style>
+
+<script language="javascript">
+function clearinputText() {
+	if (document.getElementById('searchQuery').value == "what are you looking for?") {
+		document.getElementById('searchQuery').value = "";
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="menu">
+<ul>
+	<li><a href="/">about</a></li>
+	<li><a href="/search">search</a></li>
+	<li><a href="/api">API</a></li>
+</ul>
+</div>
+
+<div id="container">
+
+	<div id="topC">
+	Phoeby
+	</div>
+	
+	<div id="bottomC">
+	
+		<form id="searchForm" action="/results" method="get">
+			<div id ="searchArea">
+				<input type="text" class="searchInput" id="searchQuery" name="searchQuery" value="what are you looking for?" onFocus="clearinputText()" />
+				<input type="submit" class="searchButton" value="search" />
+			</div>
+		</form>
+		
+	</div>
+	
+</div>
+
+</body>
+
+</html> 
