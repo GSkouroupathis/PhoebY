@@ -83,7 +83,7 @@ def add_to_index(keyword, url, index):
 
 #writeDfFile
 def writePhoebyFile(phoebyFile, dc):
-	with open('data/%s.phoeby' %phoebyFile, 'w') as phoebyFile:
+	with open('app/data/%s.phoeby' %phoebyFile, 'w') as phoebyFile:
 		for key in dc.keys():
 			phoebyFile.write(key)
 			for value in dc[key]:
@@ -96,7 +96,7 @@ def writePhoebyFile(phoebyFile, dc):
 #readDfFile
 def readPhoebyFile(phoebyFile):
 	dc = {}
-	with open('data/%s.phoeby' %phoebyFile, 'r') as phoebyFile:
+	with open('app/data/%s.phoeby' %phoebyFile, 'r') as phoebyFile:
 		for line in phoebyFile.readlines():
 			line = line.replace("\n", "")
 			listComponents = line.split(",")

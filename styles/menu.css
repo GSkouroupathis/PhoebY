@@ -33,7 +33,7 @@
 	background: #DDD url('../imgs/menuhover.png');
 	color: #151515;
 	
-	-webkit-box-shadow: 0 0 20px rgba(100,100,255,.5);
-	-moz-box-shadow: 0 0 20px rgba(100,100,255,.5);
-	box-shadow: 0 0 20px rgba(100,100,255,.5);
+	-webkit-box-shadow: 0 0 20px rgba(4,155,255,.4);
+	-moz-box-shadow: 0 0 20px rgba(4,155,255,.4);
+	box-shadow: 0 0 20px rgba(4,155,255,.4);
 }

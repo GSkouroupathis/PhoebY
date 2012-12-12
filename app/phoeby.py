@@ -11,7 +11,7 @@ ranks = {}
 #A class that stores the settings of the crawler
 class settings():
 	def __init__(self):
-		settingsFile = open('data/settings.phoeby')
+		settingsFile = open('app/data/settings.phoeby')
 		for line in settingsFile.readlines():
 			line = line.replace("\n", "")
 			regex = re.match(r'\s*([a-zA-Z0-9]*)\s*=\s*(.*)', line)

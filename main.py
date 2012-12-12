@@ -1,22 +1,25 @@
 ###################################
 # CODE AUTHOR: GEORGE SKOUROUPATHIS
 ###################################
-import tornado.ioloop, tornado.web, os, duckfuck
+import tornado.ioloop, tornado.web, os
+import sys
+sys.path.insert(0, os.path.abspath(".."))
+from app import phoeby
 
 #Main Handler
 class MainHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.render('../templates/main.html')
+		self.render('templates/main.html')
 
 #Search Handler
 class SearchHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.render('../templates/search.html')
+		self.render('templates/search.html')
 
 #API Handler
 class APIHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.render('../templates/api.html')
+		self.render('templates/api.html')
 					
 #Results Handler
 class ResultsHandler(tornado.web.RequestHandler):
@@ -25,11 +28,11 @@ class ResultsHandler(tornado.web.RequestHandler):
 		if keywords == None or keywords=="what are you looking for?":
 			self.redirect('/')
 		else:
-			results = duckfuck.search(keywords)
-			self.render('../templates/results.html', results = results)
+			results = phoeby.search(keywords)
+			self.render('templates/results.html', results = results)
 	
 settings = {
-	"static_path": os.path.join(os.path.dirname(__file__), ".."),
+	"static_path": os.path.join(os.path.dirname(__file__), "."),
 	"cookie_secret": "VVoVTzKXQAGZYdkL5fEmGeJ3FuYh1EQnp2XdTP1o/Vo2",
 	"xsrf_cookies": True,
 }

@@ -1,3 +1,3 @@
 1) Change data/setting.phoeby
-2) Run gather.py to crawl according to settings
+2) Run gather.py after importing it to your own python file, to crawl according to settings
 3) Import app.phoeby in any of you app
