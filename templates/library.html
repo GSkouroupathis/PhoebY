@@ -21,17 +21,18 @@
 </div>
 
 <div id="container">
-<u>PhoebY</u><br />
+<u>phoeby</u><br />
 A python library which provides web crawling capabilties. Good for web search engines.
 Uses breadth-first search.<br />
 <br />
-About PhoebY<br />
+function crawl() :<br />
+Crawls the web according to the settings in the data/settings.phoeby file.<br />
+Call it before anyone uses search(). Can be called by running gather.py<br />
 <br />
-How to:<br />
-1) Change data/setting.phoeby<br />
-2) Run gather.py after importing it to your own python file, to crawl according to settings. In
-this example, test-gather.py does the crawling job<br />
-3) Import app.phoeby to your application
+function search(keywordString) :<br />
+Searches index for every word of three (3) or more letters in the string (keywordString)
+supplied.<br />
+Returns results in order of weights.
 </div>
 
 </body>

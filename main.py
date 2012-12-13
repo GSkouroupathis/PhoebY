@@ -16,10 +16,10 @@ class SearchHandler(tornado.web.RequestHandler):
 	def get(self):
 		self.render('templates/search.html')
 
-#API Handler
-class APIHandler(tornado.web.RequestHandler):
+#Library Handler
+class LibraryHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.render('templates/api.html')
+		self.render('templates/library.html')
 					
 #Results Handler
 class ResultsHandler(tornado.web.RequestHandler):
@@ -41,7 +41,7 @@ application = tornado.web.Application([
 	(r"/", MainHandler),
 	(r"/search", SearchHandler),
 	(r"/results", ResultsHandler),
-	(r"/api", APIHandler),
+	(r"/library", LibraryHandler),
 ], **settings)
 
 if __name__ == "__main__":
